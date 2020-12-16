@@ -1,0 +1,29 @@
+ID: PRJ_MTA_JOBSCHEDULER
+_schema-version: '2.1'
+version: 0.0.1
+modules:
+  - name: PRJDBJOB
+    type: hdb
+    path: PRJDBJOB
+    requires:
+      - name: hdi_PRJDBJOB
+  - name: prj_job_sched_node
+    type: nodejs
+    path: prj_job_sched_node
+    provides:
+      - name: prj_job_sched_node_api
+        properties:
+          url: '${default-url}'
+    requires:
+      - name: hdi_PRJDBJOB
+      - name: prj-job-scheduler
+resources:
+  - name: hdi_PRJDBJOB
+    parameters:
+      config:
+        schema: PRJDBJOB
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
+  - name: prj-job-scheduler
+    type: com.sap.xs.job-scheduler

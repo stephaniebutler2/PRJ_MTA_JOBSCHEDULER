@@ -1,0 +1,13 @@
+{
+  "role": {
+    "name": "scarr_session_client_access#",
+    "schema_privileges":[
+             {
+                "privileges_with_grant_option":["SELECT", "EXECUTE"]
+             }],
+    "schema_analytic_privileges": [{
+			"privileges_with_grant_option": ["user_session_client","carriduser"]
+		}]
+  }
+}
+

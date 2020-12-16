@@ -1,0 +1,9 @@
+{
+  "role": {
+    "name": "schema_access_PRJDBJOB_external#",
+    "schema_privileges":[
+             {
+                "privileges_with_grant_option":["SELECT", "EXECUTE"]
+             }]
+  }
+}

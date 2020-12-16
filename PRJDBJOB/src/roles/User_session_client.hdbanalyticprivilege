@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Privilege:analyticPrivilege xmlns:Privilege="http://www.sap.com/ndb/BiModelPrivilege.ecore" id="user_session_client" privilegeType="SQL_ANALYTIC_PRIVILEGE" schemaVersion="1.1">
+<descriptions defaultDescription="user_session_client"/>
+<securedModels>
+  <modelUri>CV_SCARR</modelUri>
+</securedModels>
+
+<conditionProcedureName>session_client_procedure</conditionProcedureName>
+</Privilege:analyticPrivilege>

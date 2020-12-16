@@ -1,0 +1,73 @@
+{
+	"format_version": 1,
+	"imports": [{
+			"target_table": "MAPPING",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "data.csv",
+				"has_header": true
+			},
+			"import_settings": {
+				"import_columns": [
+					"USER",
+					"CARRID"
+				]
+			}
+		}, {
+			"target_table": "SCARR_DAP",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "scarr_table_load.csv",
+				"has_header": true
+			},
+			"import_settings": {
+				"import_columns": [
+					"MANDT",
+					"CARRID",
+					"CARRNAME",
+					"CURRCODE",
+					"URL"
+				]
+			}
+		}, {
+			"target_table": "SFLIGHT",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "sflight_data.csv",
+				"has_header": true
+			},
+			"import_settings": {
+				"import_columns": [
+					"MANDT",
+					"CARRID",
+					"CONNID",
+					"FLDATE",
+					"PRICE",
+					"CURRENCY",
+					"PLANETYPE",
+					"SEATSMAX",
+					"SEATSOCC",
+					"PAYMENTSUM",
+					"SEATSMAX_B",
+					"SEATSOCC_B",
+					"SEATSMAX_F",
+					"SEATSOCC_F"
+				]
+			}
+		}, {
+			"target_table": "COST_CENTER_MAPPING",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "cost_center_mapping.csv",
+				"has_header": true
+			},
+			"import_settings": {
+				"import_columns": [
+					"AccountType",
+					"CostCenter"
+				]
+			}
+		}
+
+	]
+}

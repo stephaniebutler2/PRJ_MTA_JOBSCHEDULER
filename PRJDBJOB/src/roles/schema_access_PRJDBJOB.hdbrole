@@ -1,0 +1,9 @@
+{
+  "role": {
+    "name": "schema_access_PRJDBJOB",
+    "schema_privileges":[
+             {
+                "privileges":["SELECT", "EXECUTE"]
+             }]
+  }
+}

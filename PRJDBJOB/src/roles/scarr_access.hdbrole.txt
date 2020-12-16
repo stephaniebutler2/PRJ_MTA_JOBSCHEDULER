@@ -1,0 +1,15 @@
+{
+  "role":{
+        "name":"scarr_access_DAP#",
+        "schema_privileges":[
+             {
+                "privileges_with_grant_option":["SELECT", "EXECUTE"]
+             }],
+             
+            "schema_analytic_privileges": [{
+			"privileges_with_grant_option": ["carriduser"]
+		}]
+       
+        }
+    }    
+	  
